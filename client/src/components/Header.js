@@ -28,7 +28,7 @@ function Header() {
                         <a href="" className="btn">Shop Now</a>
                     </div>
                     <div className="col-2">
-                        <img src="images/image1.png" />
+                        <img src="images/herodress.png" />
                     </div>
                 </div>
             </div>
