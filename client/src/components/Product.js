@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from './Rating';
 
 
 function Product({ product }) {
@@ -7,13 +8,7 @@ function Product({ product }) {
             <img src={product.image} />
             <h2>{product.name}</h2>
             <h3 style={{ color: "#ff523b" }}>{product.rating} from {product.numReviews} reviews</h3>
-            <div className="rating">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-            </div>
+            <Rating rating={product.rating} />
             <h1>${product.price}</h1>
         </div>
     )
